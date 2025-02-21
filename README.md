@@ -22,6 +22,54 @@ This dataset is an adapted version of the original MRL Eye Dataset, containing i
 - **Real-time Monitoring**: Implement a system that can operate in real-time, providing feedback to the driver to improve safety.
 - **Model Optimization**: Use machine learning techniques to improve the accuracy and performance of the detection models, utilizing the provided datasets for training and testing.
 
+## Tech Stack 🛠️
+
+- **Python**: Programming language used for the development of the project.
+  
+- **OpenCV (cv2)**: Computer vision library used for image processing tasks, such as reading, manipulating, and transforming images.
+
+- **Matplotlib**: Plotting library used for creating static, animated, and interactive visualizations, primarily used here for displaying images and training results.
+
+- **Pandas**: Data manipulation and analysis library used for handling datasets in tabular form (dataframes).
+
+- **NumPy**: Core library for numerical computing in Python, used for handling arrays and mathematical operations.
+
+- **Scikit-learn**: Machine learning library used for preprocessing data and model selection.
+
+- **TensorFlow**: Open-source deep learning framework used for building and training machine learning models, particularly convolutional neural networks (CNNs) in this case. Used in driver inattention notebooks.
+  - **Keras**: A high-level neural networks API within TensorFlow used for building and training deep learning models.
+
+- **PyTorch**: Deep learning framework for building and training neural networks, used alongside TensorFlow in this project for flexibility or comparison. Used in eye detection notebook.
+
+- **PIL (Python Imaging Library)**: Used for opening, manipulating, and saving images in different formats.
+
+## Quick Recap of Results 🚗👀
+
+In this section, I summarize the results of the driver attention and drowsiness detection system - specifically the driver inattention part. The system was evaluated on its ability to detect drowsiness, attention levels, and unsafe driving behaviors.
+
+In this section, I summarize the results of the driver attention and drowsiness detection system - specifically the driver inattention part. The system was evaluated on its ability to detect drowsiness, attention levels, and unsafe driving behaviors.
+
+### Results Overview:
+#### Classification report:
+This table gives an overview of important metrics.
+
+<img src="https://github.com/user-attachments/assets/708d25b0-8337-48f3-b319-dd4d4de5d731" alt="Classification report" width="600"/>
+
+#### Average Confidence per Class:
+This graph shows the average confidence levels for each class in the driver inattention detection task.
+
+<img src="https://github.com/user-attachments/assets/ca256e33-d27d-4584-8cfa-210425fb05bd" alt="Average Confidence Per Class" width="600"/>
+
+#### Per-class accuracy:
+This graph shows the accuracy for each class.
+
+<img src="https://github.com/user-attachments/assets/b6287b12-26ab-4704-9454-6b1569b1798d" alt="per-class accuracy" width="600"/>
+
+#### Attention Detection Example:
+This image demonstrates how the system detects driver attention based on a few images from the dataset.
+
+<img src="https://github.com/user-attachments/assets/19ae5fed-ea3a-4317-a821-51e173de51e0" alt="Attention Detection Image" width="600"/>
+
 ## License 📜
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
